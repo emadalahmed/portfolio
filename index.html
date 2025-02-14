@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض أعمال عماد - Aura Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6600;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery img, .gallery video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .gallery-item {
+            background: #333;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>معرض أعمالي - Aura Media</header>
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    المتصفح لا يدعم تشغيل الفيديو.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <img src="design1.jpg" alt="تصميم 1">
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    المتصفح لا يدعم تشغيل الفيديو.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <img src="design2.jpg" alt="تصميم 2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
